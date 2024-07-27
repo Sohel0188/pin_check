@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+   
+}
+body{
+    background-color: rgb(1, 24, 36);
+}
+
+.card{
+    background-color: #01253b;
+}
+.display{
+    height: 90px;
+    border-radius: 5px;
+    background-color: #0f3b56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+.number-generate{
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.number-generate-button{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    border: 8px solid rgb(162, 146, 182);;
+    background-color: rgb(125, 26, 255);
+    color: rgba(255, 255, 255, 0.932);
+    font-size: 25px;
+    font-weight: 600;
+   
+}
+ol, ul {
+    padding-left: 0rem;
+}
+.dial-pad{
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid #4f3f64;
+    padding: 10px;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    list-style: none;
+    font-size: 30px;
+    font-weight: 600;
+    border: 1px solid #2a1c92;
+    border-radius: 3px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color:rgb(17, 33, 50);
+    box-shadow: 1px 1px rgb(113, 231, 225);
+    color:white;
+}
+.submit-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.submit-button input{
+    width: 88%;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(125, 26, 255);
+    border-radius: 5px;
+    height: 50px;
+    border: 1px solid rgb(125, 26, 255);
+
+}
+.total-try{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    color: red;
+}
+.notification{
+    text-align: center;
+}
+.message{
+    color: white;
+    background-color: #01253b;
+    border-radius: 50px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.unsuccessful{
+    display: inline-block;
+    padding: 5px;
+    display: none;
+}
+.successful{
+    display: inline-block;
+    padding: 5px;
+    display: none;
+}

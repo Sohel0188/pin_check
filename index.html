@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="row" style="width: 80%; margin:auto">
+            <div class=" m-4 col-md-5 generate-number card card-body">
+                <div class="display">
+                    <h1 id="random-number">00</h1>
+                </div>
+                <div class="number-generate">
+                    <button class="number-generate-button" id="pin-generate">Generate Pin</button>
+                </div>
+            </div>
+
+            <div class="m-4 col-md-4 card card-body">
+                <div class="display">
+                    <h1 id="match-number"></h1>
+                </div>
+                <div class="dial-pad">
+                
+
+                    <ul class="line-one button">
+                       
+                        <button id="button-seven" onclick=inputNumber('button-seven')>7</button>
+                         <!-- <li id="button-seven"> 7 </li> -->
+                        <button id="button-eight" onclick=inputNumber('button-eight')>8</button>
+                        <button id="button-nine" onclick=inputNumber('button-nine')>9</button>
+                    </ul>
+                    <ul class="line-two button">
+                        
+                        <button id="button-four" onclick=inputNumber('button-four')>4</button>
+                        <button id="button-five"onclick=inputNumber('button-five')>5</button>
+                        <button id="button-six"onclick=inputNumber('button-six')>6</button>
+                    </ul>
+                    <ul class="line-three button">
+                        
+                        <button id="button-one"onclick=inputNumber('button-one')>1</button>
+                        <button id="button-two"onclick=inputNumber('button-two')>2</button>
+                        <button id="button-three"onclick=inputNumber('button-three')>3</button>
+                    </ul>
+                    <ul class="line-four button">
+                        <button id="button-back"><</button>
+                        <button id="button-zero"onclick=inputNumber('button-zero')>0</button>
+                        <button id="button-c">C</button>
+                        
+                    </ul>
+                    <div class="submit-button">
+                        <input type="submit" value="Submit" id="submit-button" >
+                    </div>
+            </div>
+            <div class="total-try" id="total-try-parent">
+                <p> <span id="total-try">3</span> Try Left </p>
+            </div>
+            
+
+            </div>
+        </div>
+        <div class="notification">
+            <div class="unsuccessful" id="unsuccessful">
+                <div class="message">
+                    <p> ❌ Pin Didn't Match Please Try Again </p>
+                </div>
+            </div>
+            
+            <div class="successful" id="successful">
+                <div class=" message">
+                    <p> ✅ Pin matched ... Secret Door is Opening for You </p>
+    
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
